@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test 3</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Merienda", cursive;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      .btn {
+        background: rgb(250, 233, 148);
+        background: radial-gradient(
+          circle,
+          rgba(250, 233, 148, 1) 11%,
+          rgba(232, 250, 206, 1) 26%,
+          rgba(168, 232, 247, 1) 44%,
+          rgba(149, 192, 247, 1) 69%
+        );
+        width: 100px;
+        border-radius: 12px;
+        width: 148px;
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: space-around;
+        user-select: none;
+      }
+      .item {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        width: 50%;
+        font-size: 25px;
+      }
+      h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+      .item p span {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="products">
+        <h1>PRODUCTS</h1>
+        <div id="prod1" class="item">
+          <p>Product-1</p>
+          <p>100</p>
+          <p class="btn">
+            <span class="minus1">-</span>
+            <span class="quantity1">0</span>
+            <span class="plus1">+</span>
+          </p>
+        </div>
+        <div id="prod2" class="item">
+          <p>Product-2</p>
+          <p>200</p>
+          <p class="btn">
+            <span class="minus2">-</span>
+            <span class="quantity2">0</span>
+            <span class="plus2">+</span>
+          </p>
+        </div>
+        <div id="prod3" class="item">
+          <p>Product-3</p>
+          <p>300</p>
+          <p class="btn">
+            <span class="minus3">-</span>
+            <span class="quantity3">0</span>
+            <span class="plus3">+</span>
+          </p>
+        </div>
+      </div>
+      <section class="cart"><h1>CART</h1></section>
+    </div>
+    <script>
+      let arr = [
+        { id: 1, name: "Product-1", price: 100, qnt: 0 },
+        { id: 2, name: "Product-2", price: 200, qnt: 0 },
+        { id: 3, name: "Product-3", price: 300, qnt: 0 },
+      ];
+      document.addEventListener("DOMContentLoaded", () => {
+        arr.forEach(Object, (index) => {
+            let 
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* body{
+    background: url("spring_fruits.jpg");
+} */
+.container {
+  display: flex;
+}
+#productList {
+  width: 59%;
+  /* overflow: scroll; */
+  border: 7px dashed green;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    rgba(250, 233, 148, 1) 11%,
+    rgba(232, 250, 206, 1) 26%,
+    rgba(168, 232, 247, 1) 44%,
+    rgba(149, 192, 247, 1) 69%,
+    rgba(38, 252, 179, 1) 86%
+  );
+  height: 70px;
+  border-radius: 2px;
+  margin: 2% 6px;
+  padding: 0 2%;
+}
+.items p span {
+  cursor: pointer;
+}
+#adjust {
+  cursor: ew-resize;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  background: linear-gradient(271deg, #45e7a5, #efe541, #5df4eb, #00ff62);
+  background-size: 240% 240%;
+  animation: gradient-animation 8s ease infinite;
+  color: darkslategrey;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#productList p {
+  font-size: 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+#cart {
+  width: 40%;
+  border: 7px groove #2d4b90;
+  background-image: url("spring_fruits.jpg");
+  background-size: cover;
+  position: relative;
+}
+.inCart {
+  font-size: 25px;
+  width: 100%;
+  padding: 2px;
+  height: 40px;
+  background-color: darkgrey;
+  margin: 1% 0;
+}
+.btn {
+  background: rgb(250, 233, 148);
+  background: radial-gradient(
+    circle,
+    rgba(250, 233, 148, 1) 11%,
+    rgba(232, 250, 206, 1) 26%,
+    rgba(168, 232, 247, 1) 44%,
+    rgba(149, 192, 247, 1) 69%
+  );
+  width: 100px;
+  border-radius: 12px;
+  width: 148px;
+  border-radius: 10px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-around;
+  user-select: none;
+}
+#adjust {
+  width: 1%;
+}
+.bill {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: burlywood;
+  padding: 0 6%;
+  height: 60px;
+  border: 2px solid white;
+  /* margin-top: 85%; */
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
